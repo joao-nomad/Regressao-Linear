@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Regressão Linear - Estatística Aplicada</title>
+		<!--link href="bootstrap.css" rel="stylesheet"-->
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+			<p id='titleP'>REGRESSÃO LINEAR - Estatística Aplicada</p>
+			<p class="head">Selecione a quantidade de Observações:
+				<select id="selectObs">
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+			 </p>
+		</div>
+
+		<div id="inputValues">
+		</div>
+		
+		<div id="valueTable">
+			<p class="head">Tabela de Valores:</p>
+			<table  align="center">
+				<tr class="xValue">
+				</tr>				
+				<tr class="xSquareValue">
+				</tr>
+				<tr class="yValue">
+				</tr>
+				<tr class="ySquareValue">
+				</tr>
+				<tr class="xyValue">
+				</tr>
+			</table>
+			
+			<p>Digite o valor: <input type='text' placeholder="Ex.: Interpolação: 3,5" id="inter"></p>
+			<p>Digite o valor: <input type='text' placeholder="Ex.: Extrapolação: 10" id="extra"></p>
+
+			<button id="calculatorBtn">Calcular</button>
+		</div>
+
+		<div id="formules">
+			<p class="head">Formula dos Cálculos:</p>			
+
+			<p>A = n * &Sigma; xy - &Sigma; x * &Sigma; y / n * &Sigma; x² - (&Sigma; x)²</p>
+			<p id="aWrote"></p>
+			<p id="aResult"></p>
+			
+			<hr>
+			<p>B = &Sigma; y - a * &Sigma; x / n</p>
+			<p id="bWrote"></p>
+			<p id="bResult"></p>
+			
+			<hr>
+			<p>Y = a * x  + b</p>
+
+			<p><b>Interpolação: </b></p>
+			<p id="yWrote"></p>
+			<p id="yResult"></p>
+
+			<p><b>Extrapolação: </b></p>
+			<p id="yWrote2"></p>
+			<p id="yResult2"></p>
+			
+			<hr>
+			<p><b>Cálculo do Erro:</b></p>
+			<p>Se = &radic; &Sigma; y² - b * &Sigma; y - a * &Sigma; xy / n - 2</p>
+			<p id="sWrote"></p>
+			<p id="sResult"></p>
+			<p>** Raiz quadrada não funciona muito legal com decimais em javascript</p>
+		</div>
+		
+		<script src="jquery.js"></script>
+		<script src="bootstrap.js"></script>
+		<script src="calculator.js"></script>
+	</body>
+</html>

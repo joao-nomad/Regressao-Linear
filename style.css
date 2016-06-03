@@ -1,0 +1,99 @@
+body
+{
+    font-family: Calibri;
+    margin: 0 auto !important;
+}
+
+div
+{
+    text-align: center;
+}
+
+#titleP{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+table{
+    position: relative !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: inline-block !important;
+}
+
+button{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0px;
+    height: 35px;
+    color: white;
+    background-color: gray;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+button:hover{
+    background-color: #EBF8FF;
+    color: black;
+}
+
+td{
+    height: 35px;
+    text-align: center;
+    width: 100px;
+}
+
+table{
+    display: block;
+    margin: 0 auto;
+}
+
+select
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 25px;
+    font-size: 15px;
+}
+
+#valueTable{display: none;}
+
+.head{
+    background-color: #EBF8FF;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: calibri;
+    text-align: center;
+    height: 45px;
+    padding-top: 20px;
+}
+
+.tableHead{background-color: red; color: white;}
+
+.tableSumResult{background-color: green; color: white;}
+
+#formules {display: none;}
+
+input{
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 35px;
+    border: 0px;
+    background-color: #EBF8FF;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#aResult, #bResult, #yResult, #yResult2, #sResult{font-weight: bold;}
